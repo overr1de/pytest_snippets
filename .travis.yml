@@ -1,6 +1,9 @@
-language: python
-import:
-  - echo_install.yml
-  - python_install.yml
-script:
-    pytest tests/
+jobs:
+  include:
+    name: Run Tests
+    language: python
+    import:
+      - echo_install.yml
+      - python_install.yml
+    script:
+        pytest tests/
