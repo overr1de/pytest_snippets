@@ -6,6 +6,8 @@ jobs:
   include:
     - stage: Run Tests
       name: Run Tests
+      install:
+        - echo "This should go before echo"
       script:
         - pytest tests/
     - stage: Run Tests 2
