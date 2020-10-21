@@ -1,18 +1,14 @@
+language: python
+import:
+  - echo_install.yml
+  - python_install.yml
 jobs:
   include:
     - stage: Run Tests
       name: Run Tests
-      language: python
-      import:
-        - echo_install.yml
-        - python_install.yml
       script:
         - pytest tests/
     - stage: Run Tests 2
       name: run tests 2
-      language: python
-      import:
-        - echo_install.yml
-        - python_install.yml
       script:
         - pytest -v tests/
