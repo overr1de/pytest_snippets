@@ -1,2 +1,3 @@
 install:
+  - echo "Install is imported"
   - pip install -r requirements.txt
