@@ -1,0 +1,6 @@
+language: python
+import:
+  - echo_install.yml
+  - python_install.yml
+script:
+    pytest tests/

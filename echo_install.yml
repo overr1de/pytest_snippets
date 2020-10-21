@@ -1,0 +1,3 @@
+before_install:
+  - echo "Before install step was successfuly imported"
+  - echo "2nd step just to make sure multiple values are being imported"
